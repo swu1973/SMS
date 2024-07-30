@@ -6,7 +6,7 @@ Goal: Implement an AI model to efficiently gather a researcher's expertise based
 The LlamaModel is a continuation of Mallory Helfenbein's (NASA HQ intern 2023) ReviewerExtractor codeV2. You must create an ADS account and obtain an api token: https://ui.adsabs.harvard.edu/user/settings/token. We input a list of researcher names into the codeV2 which searches by first author in ADS, gather their abstracts from 2003 to 2030, and returns the top 10 words, bigrams, and trigrams (give example sheet of researcher names for the github). From these n-grams, we create a combined top words list.
 
 
-We used the llama3-70b-8192 model in groqCloud. You must create a groqCloud account and obtain an api key: https://console.groq.com/keys. The llama model takes in the combined top words for each researcher and will determine the expertise chosen from the AAS keywords: https://journals.aas.org/keywords-2013/. We fed the model a specific prompt and the specific topics from AAS. First, the model is prompted to determine the 2 general topics and then it is asked for their associated subtopics.
+We used the llama3-70b-8192 model in groqCloud. You must create a groqCloud account and obtain an api key: https://console.groq.com/keys. The llama model takes in the combined top words for each researcher and will determine the expertise chosen from the AAS keywords: https://journals.aas.org/keywords-2013/. We fed the model a specific prompt and the specific topics from AAS. First, the model is prompted to determine the general topics and then it is asked for their associated subtopics.
 
 
 Files Needed:
