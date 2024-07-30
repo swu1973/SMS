@@ -10,14 +10,20 @@ We used the llama3-70b-8192 model in groqCloud. You must create a groqCloud acco
 
 
 Files Needed:
-ADSsearcherpkg: Python file that has all of the functions used to find the expertises of the authors and produce an organized data frame with each row being an individual author and columns: 'Input Author','Input Institution', 'First Author', 'Bibcode', 'Title', 'Publication Date', 'Keywords', 'Affiliations', 'Abstract', 'Data Type'
-TextAnalysis.py: Python file that has all the functions in order to determine the top words, bigrams and trigrams in each publication.
-stopwords.txt: Text file that has a list of the stop words for language processing.
-LlamaModel.ipynb: A notebook that contains the Llama model
+- ADSsearcherpkg: Python file that has all of the functions used to find the expertises of the authors and produce an organized data frame with each row being an individual author and columns: 'Input Author','Input Institution', 'First Author', 'Bibcode', 'Title', 'Publication Date', 'Keywords', 'Affiliations', 'Abstract', 'Data Type'
+  
+- TextAnalysis.py: Python file that has all the functions in order to determine the top words, bigrams and trigrams in each publication.
+
+- stopwords.txt: Text file that has a list of the stop words for language processing.
+  
+- LlamaModel.ipynb: A notebook that contains the Llama model
 
 
 LlamaModel Limitations:
-We are searching only by first author names and if the name is common the expertise may not be accurate --> maybe for those people input institution as well (see codeV2)
-We are trusting the formatting of the llama model output but there may be cases where the format is different so manual work may be required, such as re-running certain researchers through the model again
-It takes about 4 minutes to run 10 researchers
-Rate limits in groqCloud: 30 requests per minute
+- We are searching only by first author names and if the name is common the expertise may not be accurate --> maybe for those people input institution as well (see codeV2)
+  
+- We are trusting the formatting of the llama model output but there may be cases where the format is different so manual work may be required, such as re-running certain researchers through the model again
+  
+- It takes about 4 minutes to run 10 researchers
+  
+- Rate limits in groqCloud: 30 requests per minute
