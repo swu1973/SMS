@@ -51,16 +51,17 @@ physical data and processes:['radiation mechanisms: non-thermal', 'radiation mec
 
 Code Citation Credits:
 
-Máire Volz
+- Máire Volz
 
-Mallory Helfenbein
+- Mallory Helfenbein
 
-Isabelle Hoare
+- Isabelle Hoare
 
-Kaniyah Harris
+- Kaniyah Harris
 
-Antonino Cucchiara, PhD
+- Antonino Cucchiara, PhD
 
-Sophia Wu
-Sofia Lendahl
+- Sophia Wu
+
+- Sofia Lendahl
 
