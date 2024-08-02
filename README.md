@@ -24,14 +24,19 @@ LlamaModel Limitations:
 
 
 Google Sheets Excel Functions for the Final Results:
+
 Remove Duplicates: Data → Data Cleanup → Select these columns: Input Author, Affiliations, Combined Top Words, Number of Papers, and Model Expertise
+
 Looking for “None” in the Subtopics column: =ISNUMBER(SEARCH("None",R2))
 To Filter Columns: Data → Create Filter. Filter by TRUE
 Do manual checks and edits. Refer to the “Subtopics with Explanation” column for model reasoning.
+
 Looking for “not listed” in the Subtopics column: =ISNUMBER(SEARCH("- not listed",R2))
 To Filter Columns: Data → Create Filter. Filter by TRUE.
 Do manual checks and edits. Refer to the “Subtopics with Explanation” column for model reasoning. 
+
 Remove redundant information. For example, you can delete “black holes:[‘not listed’]” if black holes are already listed as one of the subtopics.
+
 Note: Some people may have an empty combined top words list because there are no abstract results. You can set these people aside.
 
 
@@ -44,13 +49,18 @@ For example,
 physical data and processes:['radiation mechanisms: non-thermal', 'radiation mechanisms: general', 'waves', 'radiation belt dynamics', 'particle acceleration']|Sun:['particle emission', 'Sun: radiation belt', 'Sun: radiation']|Number of Papers: 32
 
 
-Code Citation:
-Credits
+Code Citation Credits:
+
 Máire Volz
+
 Mallory Helfenbein
+
 Isabelle Hoare
+
 Kaniyah Harris
+
 Antonino Cucchiara, PhD
+
 Sophia Wu
 Sofia Lendahl
 
